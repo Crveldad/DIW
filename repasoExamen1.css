@@ -1,0 +1,79 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+
+.cursos strong, .estudiar strong {
+    color: blueviolet;
+}
+
+.contenedor {
+    width: 80%;
+    border: 3px solid black;
+    display: flex;
+    margin:0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.contenedor h1{
+    width: 100%;
+    display: inline-flex;
+}
+.ciclos{
+    float: left;
+}
+
+.cursos {
+float: left;
+}
+
+.estudiar{
+float: right;
+}
+
+@media (min-width: 1201px) {
+    .ciclos{
+        float: left;
+        width: 70%;
+    }
+    
+    .cursos {
+    float: left;
+    width: 30%;
+    }
+    
+    .estudiar{
+    float: left;
+    width: 30%;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 1200px){
+
+    .ciclos{
+        float: left;
+    }
+    
+    .cursos {
+    float: left;
+    }
+    
+    .estudiar{
+    float: left;
+    }
+
+}
+@media (max-width: 600px){
+    .cursos strong, .estudiar strong{
+        text-decoration: underline;
+    }
+    li {
+        list-style-type: none;
+    }
+    h2{
+        border-bottom: 1px solid black;
+    }
+}

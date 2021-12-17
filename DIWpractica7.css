@@ -1,0 +1,27 @@
+/* práctica 7*/
+
+body {
+    background-color: #EEEFF2;
+    color: #fff;
+}
+
+header {
+    padding: 20px;
+    background-color: #2F3350;
+}
+
+article {
+    padding: 20px;
+    background-color: #fff;
+    color: #2F3350;
+}
+
+aside {
+    padding: 20px;
+    background-color: #248399;
+}
+
+footer {
+    padding: 20px;
+    background-color: #783633;
+}
