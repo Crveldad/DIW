@@ -24,4 +24,5 @@ aside {
 footer {
     padding: 20px;
     background-color: #783633;
+    justify-content: space-around;
 }
