@@ -2,11 +2,9 @@ function accionPlay() {
     if (!medio.paused && !medio.ended) {
         medio.pause();
         play.value = '\u25BA'; //\u25BA
-        document.body.style.backgroundColor = '#fff';
     } else {
         medio.play();
         play.value = '||';
-        document.body.style.backgroundColor = 'grey';
     }
 }
 
@@ -14,12 +12,10 @@ function accionReiniciar() {
     //Usar propiedad .currentTime
     //Reproducir el vídeo
     //Cambiar el valor del botón a ||
-    if (medio.currentTime == medio.ended && medio.paused) {
+    if (medio.ended || medio.paused) {
+        medio.currentTime = 0;
         medio.play();
         play.value = '||';
-        document.body.style.backgroundColor = '#fff';
-    } else {
-        document.body.style.backgroundColor = 'grey';
     }
 }
 
@@ -27,13 +23,11 @@ function accionRetrasar() {
     //Usar propiedad .curentTime
     //Contemplar que no existen valores negativos
     medio.currentTime -= 5;
-    document.body.style.backgroundColor = '#fff';
 }
 
 function accionAdelantar() {
     //Contemplar que no existen valores mayores a medio.duration	
     medio.currentTime += 5;
-    document.body.style.backgroundColor = '#fff';
 }
 
 function accionSilenciar() {
